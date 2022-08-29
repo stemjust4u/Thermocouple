@@ -161,9 +161,9 @@ def main():
     # MQTT setup is successful. Initialize dictionaries and start the main loop.
 
     # Hardware setup
-
+    # Paragon or Skutt, bisque or glaze
     RPi = {
-        1: Thermocouple(led_pin=26, pub_topic='RPi/sensor/data', spi = board.SPI(), cs = digitalio.DigitalInOut(board.D8))
+        1: Thermocouple(led_pin=26, pub_topic='Skutt-Big/bisque/data', spi = board.SPI(), cs = digitalio.DigitalInOut(board.D8))
     }
 
     RPi[1].led.on()
